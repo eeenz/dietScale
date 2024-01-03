@@ -11,8 +11,6 @@ const goals = document.querySelector('#goals');
 const result = document.querySelector('#result');
 console.log(height, weight, goals, result);
 result.addEventListener('click',function(){
-    height.value = 160;
-    weight.value = 50;
     result_set = Number(height.value-100)*0.9;
     goals.value = `적정체중은 ${result_set}kg이며 ${weight.value - result_set}kg 초과되셨습니다.`;
     bank_input.value = '';
