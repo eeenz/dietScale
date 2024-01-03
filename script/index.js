@@ -13,7 +13,7 @@ console.log(height, weight, goals, result);
 result.addEventListener('click',function(){
     height.value = 160;
     weight.value = 50;
-    goals.value = Number(height.value-100)*0.9;
-    window.alert(`적정체중은 ${goals.value}kg이며 ${weight.value - goals.value}kg 초과되셨습니다.`);
+    result_set = Number(height.value-100)*0.9;
+    goals.value = `적정체중은 ${result_set}kg이며 ${weight.value - result_set}kg 초과되셨습니다.`;
     bank_input.value = '';
 })
