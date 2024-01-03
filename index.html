@@ -3,20 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>체중계만들기 | 과제</title>
     <link rel="stylesheet" href="./style/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=Sofia+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>체중계만들기 | 과제</title>
     <style>
-        .container { width: 380px; height: 280px; margin: 0 auto; margin-top: 50px; background-color: rgb(27, 27, 27);position: relative; padding: 5px 10px;}
-        .container h1 {font-size: 1.7rem; text-align: center; font-weight: 600; margin-top: 30px; color: #fff;}
-        .container p {text-align: center;color: #fff; margin: 6px 0 20px;}
+        /* .container {
+        width: 600px; height: 650px; margin: 0 auto; 
+        margin-top: 50px; padding: 5px 10px;
+        background-color: #f4f4f4;
+        display: flex; flex-flow:column nowrap; align-items: center;
+    }
+        .container h1 {font-size: 2rem; text-align: center; font-weight: 600; margin-top: 100px; }
+        .container p {text-align: center; margin: 10px 0 20px; font-size: 1.3rem;}
         .container ul {
-            background-color: rgb(128, 224, 248); padding: 20px 20px; }
-        .container ul #height {width:230px; margin-bottom: 10px; height: 30px; border: 1px solid #111;}
-        .container ul #weight {width:200px; margin-bottom: 10px; height: 30px; border: 1px solid #111;}
-        .container ul #goals {width:120px; height: 30px; border: 1px solid #111;}
+            padding: 20px 20px; }
+        .container ul #height {width:350px;  margin: 0px 10px; height: 40px; background-color: #fff;}
+        .container ul #weight {width:320px; margin: 0px 10px; height: 40px; background-color: #fff;}
+        .container ul #goals {width:335px;  margin: 0px 10px; height: 40px; background-color: #fff;}
+        .container ul li {
+            background-color: rgb(128, 224, 248); 
+            padding: 10px 20px; margin: 10px auto; width: 500px; height: 60px;
+            font-weight: 600;
+        }
         .container #result {
             background-color: #111; color: #fff;
-            width: 120px; height: 30px; font-size: 0.85rem; float: right; display: inline-block; position: absolute; right: 30px; bottom: 37px; 
+            width: 500px; height: 60px; font-size: 0.85rem; 
+        } */
+        .container {
+        width: 1000px; height: 550px; margin: 0 auto; 
+        margin-top: 50px; padding: 5px 10px;
+        border: 1px solid #111;
+        display: flex; flex-flow:column nowrap; align-items: center;
+        position:relative;
+    }
+        .container h1 {font-size: 2.5rem; text-align: center; font-weight: 600; margin-top: 100px; color: lightcoral; }
+        .container p {text-align: center; margin: 10px 0 20px; font-size: 1.3rem;}
+        .container ul { padding: 20px 130px 20px 10px; }
+        .container ul #height {width:350px;  margin: 0px 10px; height: 40px; background-color: #fff;}
+        .container ul #weight {width:320px; margin: 0px 10px; height: 40px; background-color: #fff;}
+        .container ul #goals {width:335px;  margin: 0px 10px; height: 40px; background-color: #fff;}
+        .container ul li {
+            background-color: #111; 
+            padding: 10px 20px; margin: 10px auto; width: 500px; height: 60px;
+            font-weight: 400; color:#fff
+        }
+        .container #result:hover {background-color:lightcoral; font-weight: 600;}
+        .container #result {
+            background-color: #111; color: #fff;
+            width: 130px; height: 130px;  
+            border-radius: 50%;
+            position: absolute; right: 150px; top:280px;
         }
     </style>
 </head>
