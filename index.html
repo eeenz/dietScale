@@ -7,41 +7,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=Sofia+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>체중계만들기 | 과제</title>
     <style>
-        /* .container {
-        width: 600px; height: 650px; margin: 0 auto; 
-        margin-top: 50px; padding: 5px 10px;
-        background-color: #f4f4f4;
-        display: flex; flex-flow:column nowrap; align-items: center;
-    }
-        .container h1 {font-size: 2rem; text-align: center; font-weight: 600; margin-top: 100px; }
-        .container p {text-align: center; margin: 10px 0 20px; font-size: 1.3rem;}
-        .container ul {
-            padding: 20px 20px; }
-        .container ul #height {width:350px;  margin: 0px 10px; height: 40px; background-color: #fff;}
-        .container ul #weight {width:320px; margin: 0px 10px; height: 40px; background-color: #fff;}
-        .container ul #goals {width:335px;  margin: 0px 10px; height: 40px; background-color: #fff;}
-        .container ul li {
-            background-color: rgb(128, 224, 248); 
-            padding: 10px 20px; margin: 10px auto; width: 500px; height: 60px;
-            font-weight: 600;
-        }
-        .container #result {
-            background-color: #111; color: #fff;
-            width: 500px; height: 60px; font-size: 0.85rem; 
-        } */
+        body {background: lightcoral;}
         .container {
         width: 800px; height: 650px; margin: 0 auto; 
-        margin-top: 50px; padding: 5px 10px;
-        border: 1px solid lightcoral;;
+        margin-top: 100px; padding: 5px 10px;
+        /* border: 1px solid lightcoral; */
+        background-color: #fff; border-radius: 20px;
         display: flex; flex-flow:column nowrap; align-items: center;
         position:relative;
     }
         .container h1 {font-size: 2.5rem; text-align: center; font-weight: 600; margin-top: 100px; color: lightcoral; }
         .container p {text-align: center; margin: 10px 0 20px; font-size: 1.3rem;}
         .container ul { padding: 20px 10px 20px 10px; }
-        .container ul #height {width:350px;  margin: 0px 10px; height: 40px; background-color: #fff; padding-left: 10px;}
-        .container ul #weight {width:320px; margin: 0px 10px; height: 40px; background-color: #fff; padding-left: 10px;}
-        .container ul #goals {width:335px;  margin: 0px 10px; height: 40px; background-color: #fff; padding-left: 10px;}
+        .container ul #height {width:350px;  margin: 0px 10px; height: 40px; background-color: #fff; padding-left: 10px; outline: none;}
+        .container ul #weight {width:320px; margin: 0px 10px; height: 40px; background-color: #fff; padding-left: 10px; outline: none;}
+        .container ul #goals {width:335px;  margin: 0px 10px; height: 40px; background-color: #fff; padding-left: 10px; outline: none;}
         .container ul li:nth-child(3) {background-color: lightcoral;}
         .container ul li {
             background-color: lightgray; 
@@ -63,9 +43,9 @@
         <h1>다이어트 체중계</h1>
         <p>당신의 건강몸무게를 알아보세요!</p>
         <ul>
-            <li>현재 키 : <input type="text" id="height">cm</li>
-            <li>현재 몸무게 : <input type="text" id="weight">kg</li>
-            <li>최종 목표 : <input type="text" id="goals"></li>
+            <li>현재 키 : <input type="text" id="height" placeholder="키를 입력하세요">cm</li>
+            <li>현재 몸무게 : <input type="text" id="weight" placeholder="몸무게를 입력하세요">kg</li>
+            <li>최종 목표 : <input type="text" id="goals" placeholder="키와 몸무게를 입력하시면 자동으로 계산됩니다"></li>
         </ul>
         <button type="button" id="result">결과보기</button>
     </div>
